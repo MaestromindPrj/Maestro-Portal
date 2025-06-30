@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0dbd1; /* moon mist */
+  color: #403f42; /* ship gray */
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color:#e0dbd1 ; /* gray chateau */
+  padding: 15px 30px;
+  color: #403f42;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(50px);
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form-row > * {
+  flex: 1;
+  min-width: 180px;
+}
+
+.form-row label {
+  font-weight: 600;
+  color: #a3a4a5;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-row input,
+.form-row select,
+.form-row input[type="date"] {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #a3a4a5;
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #111117;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f96214;
+  color: white;
+}
+
+button:hover:not(:disabled) {
+  background-color: #c94d0f; 
+  color: white;
+}
+
+button:disabled {
+  background-color: #f96214;
+  color: white;
+  opacity: 0.6; /* makes it visibly different */
+  cursor: not-allowed;
+}
+
+/* Specific Buttons */
+.leave-btn {
+  background-color: #f96214;
+  color: white;
+}
+
+.leave-btn:hover:not(:disabled) {
+  background-color: #f96214;
+}
+
+.excel-btn {
+  background-color: #f96214;
+  color: white;
+}
+
+.excel-btn:hover:not(:disabled) {
+  background-color: #f96214;
+}
+
+.excel-btn:disabled {
+  background-color: #f96214;
+}
+
+/* Form Buttons Alignment */
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.dashboard {
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #6b7479; /* nevada */
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #403f42;
+  margin-top: 10px;
+}
+
+.log-table {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #f76e29; /* moon mist */
+  color: #403f42;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Status Colors */
+.status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  color: #38a169;
+}
+
+.status.pending {
+  color: #d69e2e;
+}
+
+.status.rejected {
+  color: #e53e3e;
+}
+
+td button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f96214;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+td button:hover:not(:disabled) {
+  background-color: #c94d0f;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-row > * {
+    width: 100%;
+  }
+
+  .form-section {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-row button {
+    margin-top: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .form-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .excel-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .form-buttons {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .excel-btn {
+    width: auto;
+    padding: 10px 20px;
+    align-self: flex-end;
+  }
+}
