@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.page-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0;
+  position: absolute;
+  top: 1.6rem;
+  left: 5.5rem;
+}
+
+.login-title {
+  position: absolute;
+  top: -0.2rem;
+  left: 5rem;
+}
+
+.register-title {
+  position: absolute;
+  top: -0.2rem;
+  left: 5rem;
+}
+
+.reset-title {
+  position: absolute;
+  top: -0.2rem;
+  left: 6rem;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid #0f0c0c;
+  max-width: 350px;
+  max-height: 85vh;
+  text-align: center;
+  position: relative;
+  overflow-y: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f15a08;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin: 0.8rem 0;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #0c000038;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group select:focus + label,
+.input-group select:valid + label {
+  top: 0;
+  font-size: 12px;
+  color: #f15a08;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.6rem 2.2rem 0.6rem 0.8rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  font-size: 0.9rem;
+  outline: none;
+  color: #333;
+}
+
+.input-group select {
+  appearance: none;
+  background-color: transparent;
+}
+
+.input-icon-right {
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #888;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.input-file-group {
+  width: 100%;
+  margin: 0.8rem 0;
+  text-align: left;
+}
+
+.input-file-group label {
+  display: block;
+  font-size: 12px;
+  color: #f15a08;
+  margin-bottom: 4px;
+}
+
+.input-file-group input[type="file"] {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.input-file-group input[type="file"]::file-selector-button {
+  background-color: #f15a08;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-right: 10px;
+}
+
+.input-file-group input[type="file"]::file-selector-button:hover {
+  background-color: #d44b00;
+}
+
+form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.65rem;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  border-radius: 20px;
+  border: none;
+  background: #f15a08;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #d44b00;
+}
+
+form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+form a {
+  color: #3a95f5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container,
+input[type="password"]::-webkit-clear-button {
+  display: none !important;
+  pointer-events: none;
+  appearance: none;
+}
+
+/* Remove number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #888;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.login-title-int {
+  position: absolute;
+  top: -0.2rem;
+  left: 6rem;
+}
+
+.register-title-int {
+  position: absolute;
+  top: -0.2rem;
+  left: 6rem;
+}
+
+.reset-title-int {
+  position: absolute;
+  top: -0.2rem;
+offset: 4 rem;
+}
+
+/* 📱 Smartphones: max-width 480px */
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%;
+    padding: 1rem;
+    max-height: 90vh;
+  }
+
+  .page-title,
+  .login-title,
+  .register-title,
+  .reset-title,
+  .login-title-int,
+  .register-title-int,
+  .reset-title-int {
+    font-size: 1rem;
+    left: 4rem;
+    top: 1.2rem;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 0.85rem;
+    padding: 0.5rem 2rem 0.5rem 0.7rem;
+  }
+
+  form button {
+    font-size: 0.85rem;
+    padding: 0.55rem;
+  }
+
+  .input-icon-right,
+  .eye-icon {
+    font-size: 1rem;
+    right: 0.5rem;
+  }
+}
+
+/* 📱 Tablets and small devices: max-width 768px */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    padding: 20px 5px;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 1.2rem;
+    max-height: 90vh;
+  }
+
+  .page-title,
+  .login-title,
+  .register-title,
+  .reset-title,
+  .login-title-int,
+  .register-title-int,
+  .reset-title-int {
+    font-size: 1.1rem;
+    left: 6rem;
+    top: 0.5rem;
+  }
+
+  .logo-img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .logo span {
+    font-size: 1.2rem;
+  }
+}
