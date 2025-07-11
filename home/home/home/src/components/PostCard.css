@@ -1,0 +1,301 @@
+.post-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.image-modal .modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+
+.post-header {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.timestamp {
+  font-style: italic;
+  color: #888;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+.post-video {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-content {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #293241;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-actions button.active {
+  color: #00c853;
+  font-weight: 700;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.send-icon {
+  color: #00c853;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.send-icon:hover {
+  transform: scale(1.1);
+}
+
+.post-card {
+  background-color: #fffefe;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.post-header {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.timestamp {
+  font-style: italic;
+  color: #888;
+}
+
+/* Ensure video/image fits post area */
+.post-image,
+.post-video {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+
+
+.post-content {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #293241;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-actions button.active {
+  color: #00c853;
+  font-weight: 700;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.send-icon {
+  color: #00c853;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.send-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Global body */
+body,
+html,
+.app {
+  font-family: sans-serif;
+  background-color: #fff4e6;
+}
+
+@media (max-width: 768px) {
+
+  .post-card,
+  .qna-post-card {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .post-image,
+  .post-video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .answer-input,
+  .reply-input {
+    flex-direction: column;
+  }
+
+  .answer-input input,
+  .reply-input input {
+    width: 100%;
+  }
+
+  .answer-input button,
+  .reply-input button {
+    width: 100%;
+  }
+
+  /* 📌 Post feed wrapper styles */
+  .post-feed-wrapper {
+    display: flex;
+
+    align-items: center;
+    /* Centers all post-cards */
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* 🛠️ Optional constraint for desktop: limit width */
+  @media (min-width: 769px) {
+    .post-feed-wrapper {
+      max-width: 600px;
+      /* Or 700px if you prefer */
+      margin: 0 auto;
+    }
+  }
+
+  /* ✅ On mobile: take 100% width, center-align content */
+  @media (max-width: 768px) {
+    .post-feed-wrapper {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    .post-card {
+      width: 100%;
+    }
+  }
+
+}

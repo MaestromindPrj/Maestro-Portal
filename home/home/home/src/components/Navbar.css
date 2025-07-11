@@ -1,0 +1,177 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #f1ede2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #293241;
+}
+
+.navbar-right {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.plus-icon,
+.profile-icon {
+  color: #ff6210;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  color: #ff6210;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  padding: 10px 14px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #f1ede2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Centered brand section (logo + title) */
+.navbar-left {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #293241;
+  text-align: center;
+}
+
+/* Right-side icons */
+.navbar-right {
+  position: absolute;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.floating-add-icon,
+.profile-icon {
+  font-size: 28px;
+  color: #ff8c42;
+  cursor: pointer;
+}
+
+/* Default desktop navbar */
+.navbar {
+  height: 60px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px;
+    /* increase navbar height */
+    font-size: 18px;
+    /* increase text/icon size */
+    padding: 1px 5px;
+    /* more padding for touch */
+  }
+
+  .navbar-center img {
+    height: 30px;
+    /* logo size */
+  }
+
+  .navbar-left {
+    left: 30%;
+  }
+
+  .navbar-right {
+    position: absolute;
+    right: 30px;
+
+    .navbar .icon {
+      font-size: 22px;
+      /* icon size (optional class) */
+    }
+  }
+}

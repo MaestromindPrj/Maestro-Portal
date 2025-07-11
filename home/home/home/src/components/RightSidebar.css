@@ -1,0 +1,79 @@
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  width: 200px;
+  padding: 20px;
+  background-color: #fff4e6;
+  height: calc(100vh - 70px);
+  border-left: 1px solid #e0d7cd;
+  overflow-y: auto;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.03);
+}
+
+.ask-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ask-icon {
+  font-size: 30px;
+  color: #ff8c42;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ask-icon:hover {
+  transform: scale(1.1);
+}
+
+.ask-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #293241;
+  margin: 0;
+}
+
+.question-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.question-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.question-link {
+  font-size: 14px;
+  color: #131517;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  font-family: inherit;
+  flex: 1;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ❌ Disable hover color/underline completely */
+.question-link:hover {
+  color: #131517 !important;
+  text-decoration: none !important;
+  background: none !important;
+}
+
+/* ✅ Highlight only the selected question */
+.question-link.selected {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}

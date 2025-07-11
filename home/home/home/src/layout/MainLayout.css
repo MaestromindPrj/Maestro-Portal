@@ -1,0 +1,76 @@
+/* Desktop Layout */
+.layout-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff4e6;
+}
+
+/* Left Sidebar */
+.sidebar-section {
+    width: 220px;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    padding: 10px;
+    background-color: #fff4e6;
+    z-index: 2;
+}
+
+/* Right Sidebar */
+.right-section {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding: 10px;
+    background-color: #fff4e6;
+    z-index: 2;
+}
+
+/* Main Content Section (centered) */
+.main-section {
+    flex: 1;
+    margin-left: 220px;
+    margin-right: 250px;
+    padding: 20px 30px;
+    min-height: 100vh;
+}
+
+/* Center the posts in main-section */
+.post-feed-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🟠 Mobile view */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .sidebar-section,
+    .right-section {
+        position: static;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-section {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .post-feed-wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

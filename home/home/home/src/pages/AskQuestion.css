@@ -1,0 +1,70 @@
+.ask-question-container {
+  position: relative;
+  padding: 100px 20px 30px;
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+h3 {
+  text-align: center;
+  color: #293241;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 96%;
+  height: 150px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #470404;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-buttons {
+  text-align: right;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+
+.ask-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7c6f99;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ask-close-btn:hover {
+  transform: scale(1.2);
+  color: #3d3d3d;
+}
+
+.post-actions button.active {
+  color: #00c853;
+  font-weight: 700;
+}

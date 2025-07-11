@@ -1,0 +1,166 @@
+.qna-post-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.qna-post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.qna-post-header .profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.qna-post-content {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.answer-input {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+  color: #ff6210
+}
+
+.answer-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.answer-input button {
+  padding: 8px 12px;
+  background: #ff6210;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-box {
+  background: #f3f3f3;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.answer-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.answer-meta strong {
+  margin-right: 6px;
+}
+
+.reply-options {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #007bff;
+}
+
+.reply {
+  margin-left: 20px;
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.reply-input {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.reply-input input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reply-input button {
+  padding: 6px 10px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.highlighted-question {
+  border: 2px solid #153bd5;
+  border-radius: 12px;
+  background-color: #eef4ff;
+  scroll-margin-top: 80px;
+  transition: background-color 0.5s ease;
+}
+
+.like-dislike-container {
+  display: flex;
+  gap: 15px;
+  margin: 8px 0;
+}
+
+.like-btn,
+.dislike-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #293241;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.like-dislike-container button.voted {
+  color: #00c853;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+
+  .post-card,
+  .qna-post-card {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .post-image,
+  .post-video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .answer-input,
+  .reply-input {
+    flex-direction: column;
+  }
+
+  .answer-input input,
+  .reply-input input {
+    width: 100%;
+  }
+
+  .answer-input button,
+  .reply-input button {
+    width: 100%;
+  }
+}
