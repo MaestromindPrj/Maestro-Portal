@@ -1,0 +1,153 @@
+.home-layout {
+  display: flex;
+  margin-top: 70px;
+  background-color: #fa8329;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  color: #d8762c;
+}
+
+.banner-section {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 70px;
+  background-color: #fff7ed;
+}
+
+.home-center {
+  flex: 1;
+  padding: 20px 30px;
+  margin-left: 220px;
+  margin-right: 250px;
+}
+
+.caption h2 {
+  margin-top: 15px;
+  font-size: 26px;
+  color: #5a381e;
+  font-weight: 600;
+}
+
+.caption p {
+  font-size: 15px;
+  color: #865c30;
+  margin-bottom: 15px;
+}
+
+.caption button {
+  background-color: #e4791c;
+  color: #fff4e6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 60px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.caption button:hover {
+  background-color: #de781e;
+
+}
+
+.posts-section {
+  margin-top: 40px;
+}
+
+.no-posts {
+  font-size: 16px;
+  color: #a37c4c;
+  text-align: center;
+  padding: 40px 0;
+  font-style: italic;
+}
+
+
+
+.home-center {
+  margin: 0;
+  padding: 20px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 40px 25px 25px;
+  /* top padding increased from 25px to 40px */
+  border-radius: 14px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.add-post-btn {
+  background-color: #f29e38;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 22px;
+  color: rgb(143, 131, 181);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-box-container {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto 30px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 2px solid #e3730b;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.search-box:focus {
+  box-shadow: 0 0 0 2px #d0870944;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}

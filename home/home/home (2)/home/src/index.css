@@ -1,0 +1,55 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #293241;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .home-layout {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .post-card {
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .post-image,
+  .post-video {
+    max-height: 300px;
+  }
+
+  .caption button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .image-modal .modal-content {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .search-box-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .top-questions {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

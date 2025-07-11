@@ -1,0 +1,84 @@
+.sidebar {
+  width: 230px;
+  background-color: #fff4e6;
+  height: 100vh;
+  padding: 20px 5px;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  /* below navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar li:hover {
+  background-color: #e0e0e0;
+}
+
+/* ✅ Highlight active page */
+.sidebar li.active {
+  background-color: #ffd8a8;
+  color: #d35400;
+  font-weight: 600;
+}
+
+/* ✅ Ensure links inside li have correct styling */
+.sidebar li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Collapse button */
+.collapse-btn {
+  padding: 8px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .sidebar li {
+    flex: 1 0 45%;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .collapse-btn {
+    display: none;
+  }
+}
